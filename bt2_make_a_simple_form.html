@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cap {
+            background-color: #d4fdd6;
+            color: blue;
+            padding: 5px;
+        }
+
+        fieldset {
+            background-color: #fffda9;
+            border: none;
+            width: 500px;
+            display: block;
+            margin: auto;
+        }
+
+        label {
+            color: blue;
+            display: inline-block;
+            width: 90px;
+            /* text-align: right; */
+        }
+
+        #name {
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div class="cap">
+                <caption>ĐĂNG KÝ HỌC VIÊN</caption>
+            </div>
+
+            <br>
+
+            <label for="name">Họ và tên</label>
+            <input type="text" name="name" id="name"><br><br>
+
+            <label for="name">Ngày sinh</label>
+            <input type="text" name="birth" id="birth"><br><br>
+
+            <label for="name">Giới tính</label>
+            <input type="radio" name="gender" checked> Nam
+            <input type="radio" name="gender"> Nữ<br><br>
+
+            <label for="name">Địa chỉ</label>
+            <textarea name="textbox" id="texbox" cols="30" rows="4"></textarea> <br><br>
+
+            <label for="grade">Lớp</label>
+            <select name="grade" id="grade">
+                <option value="default">-Chọn lớp-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="colledge">Đại học</option>
+            </select><br><br>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"><br><br>
+
+            <label for="phone">Điện thoại</label>
+            <input type="text" name="phone" id="phone"><br><br>
+
+            <div style="text-align: center; margin-top: 10px;">
+                <input type="submit" name="signup" value="Đăng ký">
+                <input type="reset" name="reset" value="Nhập lại">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

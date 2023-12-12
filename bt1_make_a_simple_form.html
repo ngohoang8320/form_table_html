@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            background-color: #d5feff;
+            height: 300px;
+            width: 550px;
+            display: block;
+            margin: auto;
+
+        }
+
+        fieldset {
+            width: 480px;
+            border: none;
+            background-color: white;
+            display: block;
+            margin: auto;
+            position: relative;
+            top: 10px
+        }
+
+        .cap {
+            text-align: center;
+            background-color: #ff4c00;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .hobby {
+            display: inline-block;
+            
+        }
+
+        table {
+            display: inline;
+        }
+
+        td {
+            padding: 0 12px;
+            color: #ff4c00;
+        }
+
+        label {
+            color: blue;
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div class="cap">
+                <caption>SỞ THÍCH CỦA BẠN</caption><br>
+            </div>
+
+            <label for="yourname">Họ và tên</label>
+            <input type="text" name="yourname" style="width: 300px;"><br><br>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" style="width: 300px;"><br><br>
+
+            <label for="hobby">Sở thích</label>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="hobby"> Thể thao</td>
+                    <td><input type="checkbox" name="hobby"> Âm nhạc</td>
+                    <td><input type="checkbox" name="hobby"> Đọc sách</td>
+                </tr>
+                <tr>
+
+                </tr>
+                    <td><input type="checkbox" name="hobby"> Lướt web</td>
+                    <td><input type="checkbox" name="hobby"> Chơi game</td>
+                    <td><input type="checkbox" name="hobby"> Điện ảnh</td>
+                
+                <tr>
+                    <td><input type="checkbox" name="hobby"> Du lịch</td>
+                </tr>    
+            </table>
+            <div style="text-align: center; margin-top: 20px">
+                <input type="submit" name="Submit Form" value="Gửi thông tin">
+                <input type="reset" name="Reset Form" value="Nhập lại">
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
